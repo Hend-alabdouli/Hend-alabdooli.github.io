@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    font-family: poppins, sans-serif;
+    background-color: #FFF;
+    
+}
+/* Navigation */
+main{
+    padding-top: 65px;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+a:hover{
+    background-color: rgba(118, 77, 184, 0.411);
+}
+.active{
+    background-color: rgba(89, 42, 143, 0.411);;
+}
+
+.main-menu{
+    background-color: rgba(50, 2, 78, 0.884);
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.main-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.main-menu li{
+    flex: 3;
+}
+.main-menu .user{
+    flex: 1;
+}
+/* Header */
+.header{
+    /* background-color: #333; */
+    margin-top: -10px;
+    color: #FFFF;
+    text-align: center;
+    padding: 20px;
+    height: 250px;
+    background-image: url(".././img/header1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    
+}
+h1{
+    position: relative;
+    top: 30%;
+    font-size: 70px;
+    color: #FFFF;
+    
+}
+/* end header */
+/* content- Header */
+.content-divider{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 55vh;
+    background-color: #FFF;
+    border-bottom: 1px solid #c7c5c5;
+
+}
+.content-heading{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 30vh;
+    font-size: large;
+    text-align: center;
+    color: #333;
+}
+/* ----end content Header */
+/* Slider-1 Left - Dining*/
+.slider {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: #FFFF;
+  }
+#wrapper1 {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+  }
+  
+  #carousel1 {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  #carousel1::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #prev1,
+  #next1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: rgb(132, 38, 219);
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev1 {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next1 {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content1 {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+  }  
+/* ----------end slider------------------ */
+
+/* Slider-2 Right Activities and Wellbeing*/
+.slider {
+    
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: #FFFF;
+  }
+#wrapper2 {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+  }
+  
+  #carousel2 {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  #carousel2::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #prev2,
+  #next2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: rgb(132, 38, 219);
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev2 {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next2 {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content2 {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .item {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+  }
+  
+  
+/*---end slider */
+
+/* Video Section */
+.video{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+video{
+  background-color: #FFF;
+  width: 50%;
+  height: 20%;
+  }
+
+/* -------end video section----- */
+
+.purple-button {
+  background-color: rgba(50, 2, 78, 0.884);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media all and (max-width: 1200px) {
+   .main-menu ul{
+    flex-wrap: wrap;
+   }
+   .main-menu li{
+    flex: 1 1  50%;
+   }
+   .main-menu .user{
+    flex: 1 1 50%;
+   }
+   main{
+    margin-top: 0px;
+    padding-top: 200px;
+   }
+    
+}
+
+@media all and (max-width: 480px) {
+    .navigation li {
+       flex-basis: 100%;
+    }
+ 
+    .navigation .user {
+       flex-basis: 50%;
+    }
+   
+ }
+ .content{
+    /* border: 1px solid; */
+    margin-left: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    /* background-color: aliceblue; */
+ }
+ 
