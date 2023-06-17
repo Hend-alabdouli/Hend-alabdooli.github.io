@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure story</title>
+    <link rel="stylesheet" href="./assests/css/index.css" />
+    <link rel="stylesheet" href="./assests/css/4panel.css" />
+    <!-- <link rel="stylesheet" href="./assests/css/style.css" /> -->
+    <!-- <link rel="stylesheet" href="./assests/css/style1.css" /> -->
+  </head>
+  <body id="myImage">
+    <div id="titl">Time catastrophe</div>
+    <button onclick="shakeImage()" id="shake-button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Start
+    </button>
+
+    <div class="panel1 fade1">
+      <div class="time_sci">I think a few more adjustments and the time machines will work!</div>
+      <div class="alert hide">Click me</div>
+      <img class="mainlab1" src="./assests/images/panel1/Layer1.jpg" alt="mainlab1" />
+      <div class="pointer timemachine_map" onclick="timemachine()"></div>
+    </div>
+    <div class="panel2">
+      <div class="timemachine hide">
+        <img class="travel" src="./assests/images/panel1/wormcopy.gif" alt="travel" />
+        <div class="noplan">Oh,no! Help! This wasn't part of the plannnnnnnnn!!!</div>
+      </div>
+    </div>
+
+    <div class="panel3">
+      <img class="panel3_back" src="./assests/images/panel3/jangul.jpg" alt="jangul" usemap="#detail" />
+      <img class="pn3_Brachiosauruses" src="./assests/images/panel3/Brachiosauruses.png" alt="Brachiosauruses" />
+      <img class="pn3_Velociraptors" src="./assests/images/panel3/Velociraptors1.png" alt="Velociraptors1" />
+      <img class="pn3_dino" src="./assests/images/panel3/dino-1.png" alt="dino" />
+      <img class="pn3_man fall" src="./assests/images/panel3/Copy of sprite-4.png" alt="" />
+      <img class="pn3_man_1 hide" src="./assests/images/panel3/Copy of sprite-7.png" alt="" />
+      <img class="pn3_man_1 hide" src="./assests/images/panel3/Layer1.png" alt="" />
+      <div class="pn3_box wonder hide">Where... where am I? This doesn't look like anywhere I've ever seen before.</div>
+      <div class="pointer next_btn" onclick="panel3_end()">NEXT</div>
+    </div>
+
+    <div class="pn4_div fade1" id="pn4dv">
+      <div class="pn4_box1">Attack!</div>
+      <div class="pn4_box2">Oh heavens! Not again!</div>
+      <div class="pn4_box3">Click me!</div>
+      <div class="pointer pn4_sprite"></div>
+      <div class="pn4-fire1"></div>
+      <div class="pn4-fire2"></div>
+    </div>
+
+    <div class="panel5">
+      <img class="panel5_back" src="./assests/images/panel5/panel5bg.png" alt="panel5" />
+      <div class="newsboy"></div>
+      <div class="general"></div>
+      <p class="pn5_text">The scientist was finally able to adjust the time machine by fixing the timeline!</p>
+      <img class="walk1" src="./assests/images/panel5/walk1.png" alt="walk1" />
+      <img class="walk2" src="./assests/images/panel5/walk2.png" alt="walk1" />
+      <img class="walk3" src="./assests/images/panel5/walk1.png" alt="walk3" />
+      <p class="statement5_s">Again! I need the date to adjust the machine.</p>
+      <p class="statement5_1">Get your daily news right here!</p>
+      <button class="pn5_nxt" onclick="pn5_btnclk()">Next</button>
+    </div>
+    <div class="panel6">
+      <img class="mainlab hide" src="./assests/images/panel6/Background.jpg" alt="mainlab" />
+      <img class="last_sci hide" src="./assests/images/panel3/Copy of sprite-7.png" alt="" />
+      <p class="final hide">Finally,I am back</p>
+    </div>
+    <script src="./assests/js/jquery.min.js"></script>
+    <script src="./assests/js/index.js"></script>
+  </body>
+</html>

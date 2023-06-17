@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<g id="Layer_1">
+	<image style="overflow:visible;" width="1600" height="1000" xlink:href="dinosaur.jpg"  transform="matrix(1 0 0 1 160 40)">
+	</image>
+</g>
+<g id="dino-1">
+	
+		<image style="overflow:visible;" width="895" height="895" xlink:href="dino-3.png"  transform="matrix(-0.4609 0 0 0.4581 1471.5 143)">
+	</image>
+</g>
+<g id="dino-2">
+	<image style="overflow:visible;" width="640" height="600" xlink:href="dino-2.png"  transform="matrix(1 0 0 1 383 240)">
+	</image>
+</g>
+<g id="first">
+	
+		<image style="overflow:visible;" width="80" height="80" xlink:href="sprite-7.png"  transform="matrix(1.7825 0 0 1.4325 1102 782)">
+	</image>
+</g>
+<g id="second">
+	
+		<image style="overflow:visible;" width="66" height="59" xlink:href="sprite-4.png"  transform="matrix(1.515 0 0 1.4616 1123 802)">
+	</image>
+</g>
+<g id="third">
+	
+		<image style="overflow:visible;" width="80" height="80" xlink:href="sprite-5.png"  transform="matrix(1.4125 0 0 1.35 1117 687)">
+	</image>
+</g>
+<g id="fourth">
+	
+		<image style="overflow:visible;" width="80" height="120" xlink:href="sprite-6.png"  transform="matrix(1.4 0 0 1.2667 1123 515)">
+	</image>
+</g>
+</svg>

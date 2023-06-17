@@ -1,0 +1,472 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-size: 0.0520833333vw;
+}
+
+@keyframes toup {
+  0% {
+    right: 900rem;
+    top: 400rem;
+  }
+  100% {
+    right: 900rem;
+    top: 100rem;
+  }
+}
+#myImage {
+  /* Set height of the body to 100% -- separated out of html to allow scrollTo animation */
+  height: 100vh;
+  margin: 0rem;
+  background-size: 100%;
+  background-image: url("../images/panel1/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+#titl {
+  font-size: 150rem;
+  font-family: "Edwardian Script ITC";
+  font-weight: 800;
+  position: absolute;
+  top: 18%;
+  left: 25%;
+  color: #c2eba3;
+  letter-spacing: 15rem;
+  text-shadow: 9rem 4rem 18rem white;
+}
+
+.panel1 {
+  display: none;
+  position: relative;
+}
+.panel1 .mainlab1 {
+  height: 100vh;
+}
+.panel1 .alert {
+  position: absolute;
+  top: 36%;
+  left: 35%;
+  font-size: 45rem;
+  font-family: Matura MT Script Capitals;
+  color: white;
+  font-weight: 700;
+  text-shadow: 7rem 4rem 15rem rgb(67, 99, 76), -2rem -2rem black;
+}
+.panel1 .time_sci {
+  position: absolute;
+  top: 56%;
+  left: 54%;
+  padding: 10rem;
+  border-radius: 15rem;
+  font-size: 15rem;
+  width: 300rem;
+  background-color: white;
+  display: none;
+}
+.panel1 .timemachine_map {
+  position: absolute;
+  z-index: 30;
+  width: 355rem;
+  height: 375rem;
+  top: 25%;
+  left: 30%;
+}
+
+.panel2 {
+  position: relative;
+}
+.panel2 .timemachine .travel {
+  width: 1920rem;
+  height: 100vh;
+  left: -960rem;
+  top: 0rem;
+}
+.panel2 .timemachine .noplan {
+  position: absolute;
+  top: 120rem;
+  left: 30%;
+  font-size: 35rem;
+  color: white;
+  width: 1000rem;
+}
+
+.panel3 {
+  position: relative;
+  display: none;
+}
+.panel3 .panel3_back {
+  width: 1920rem;
+  height: 100vh;
+  position: relative;
+}
+.panel3 .pn3_Brachiosauruses {
+  position: absolute;
+  width: 280rem;
+  height: 160rem;
+  left: 38%;
+  top: 68%;
+  cursor: pointer;
+}
+.panel3 .pn3_Velociraptors {
+  position: absolute;
+  width: 400rem;
+  height: 400rem;
+  top: 55%;
+  left: 48%;
+  cursor: pointer;
+}
+.panel3 .pn3_dino {
+  position: absolute;
+  width: 300rem;
+  bottom: 53%;
+  left: 65%;
+  cursor: pointer;
+}
+.panel3 .pn3_man {
+  position: absolute;
+  width: 150rem;
+  right: 16%;
+  top: 60%;
+}
+.panel3 .pn3_man_1 {
+  position: absolute;
+  right: 16%;
+  top: 60%;
+  width: 60rem;
+}
+.panel3 .pn3_box {
+  position: absolute;
+  padding: 10rem;
+  top: 52%;
+  left: 74%;
+  width: 400rem;
+  color: black;
+  background-color: white;
+  border-radius: 15rem;
+  font-size: 20rem;
+}
+.panel3 .next_btn {
+  display: none;
+  position: absolute;
+  left: 1600rem;
+  top: 100rem;
+  color: white;
+  padding: 10rem 30rem;
+  letter-spacing: 5rem;
+  font-size: 25rem;
+  background-color: black;
+  border: none;
+  border-radius: 30rem;
+}
+
+.pn4_div {
+  display: none;
+}
+
+.panel5 {
+  display: none;
+  position: relative;
+}
+.panel5_back {
+  width: 1920rem;
+  height: 100vh;
+}
+.panel5 .walk1 {
+  position: absolute;
+  left: 450rem;
+  bottom: 100rem;
+  width: 130rem;
+}
+.panel5 .walk2 {
+  display: none;
+  position: absolute;
+  left: 580rem;
+  bottom: 100rem;
+  width: 150rem;
+}
+.panel5 .walk3 {
+  display: none;
+  position: absolute;
+  left: 710rem;
+  bottom: 100rem;
+  width: 130rem;
+}
+.panel5 .statement5_1 {
+  display: none;
+  position: absolute;
+  left: 950rem;
+  bottom: 320rem;
+  color: black;
+  font-size: 25rem;
+  font-weight: 200;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 10rem 30rem;
+  background-color: white;
+  border: none;
+  border-radius: 15rem;
+}
+.panel5 .statement5_s {
+  display: none;
+  position: absolute;
+  left: 450rem;
+  bottom: 420rem;
+  color: black;
+  font-size: 25rem;
+  font-weight: 200;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 10rem 30rem;
+  background-color: white;
+  border: none;
+  border-radius: 15rem;
+}
+.panel5 .pn5_text {
+  display: none;
+  position: absolute;
+  color: rgb(0, 255, 60);
+  left: 15%;
+  top: 100rem;
+  font-weight: bold;
+  padding: 50rem 100rem;
+  font-size: 30rem;
+  background-color: rgba(66, 54, 38, 0.849);
+  border-radius: 30rem;
+}
+.panel5 .pn5_nxt {
+  display: none;
+  position: absolute;
+  left: 1600rem;
+  top: 10%;
+  padding: 10rem 30rem;
+  letter-spacing: 5rem;
+  color: white;
+  font-size: 25rem;
+  background-color: black;
+  border: none;
+  border-radius: 30rem;
+}
+.panel5 .newsboy {
+  position: absolute;
+  z-index: 30;
+  width: 80rem;
+  height: 250rem;
+  left: 870rem;
+  bottom: 100rem;
+}
+.panel5 .general {
+  position: absolute;
+  z-index: 30;
+  width: 700rem;
+  height: 40rem;
+  left: 720rem;
+  top: 380rem;
+}
+
+.panel6 {
+  position: relative;
+}
+.panel6 .mainlab {
+  height: 100vh;
+}
+.panel6 .last_sci {
+  position: absolute;
+  width: 99rem;
+  top: 61%;
+  left: 48%;
+}
+.panel6 .final {
+  position: absolute;
+  top: 56%;
+  left: 54%;
+  padding: 10rem;
+  border-radius: 15rem;
+  font-size: 15rem;
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+/* *********************************************************
+  Button
+********************************************************* */
+button {
+  position: relative;
+  padding: 7rem 15rem;
+  outline: none;
+  border: 1rem solid #303030;
+  background: #212121;
+  color: #ae00ff;
+  text-transform: uppercase;
+  letter-spacing: 8rem;
+  font-size: 30rem;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 30rem;
+  cursor: pointer;
+  font-weight: bold;
+  top: 150rem;
+}
+
+button:hover {
+  box-shadow: 0 0 10rem #ae00ff, 0 0 25rem #001eff, 0 0 50rem #ae00ff;
+  transition-delay: 0.6s;
+}
+
+button span {
+  position: absolute;
+}
+
+button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2rem;
+  background: linear-gradient(90deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.7s;
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2rem;
+  background: linear-gradient(90deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.7s;
+  transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2rem;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.7s;
+  transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2rem;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.7s;
+  transition-delay: 0.52s;
+}
+
+button:active {
+  background: #ae00af;
+  background: linear-gradient(to top right, #ae00af, #001eff);
+  color: #bfbfbf;
+  box-shadow: 0 0 8rem #ae00ff, 0 0 8rem #001eff, 0 0 8rem #ae00ff;
+  transition: 0.1s;
+}
+
+button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+  transition: none;
+  transition-delay: none;
+}
+
+/* *********************************************************
+  Shaking animation 
+********************************************************* */
+.shake-image {
+  animation: shake 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1rem, 1rem) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1rem, -2rem) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3rem, 0rem) rotate(1deg);
+  }
+  30% {
+    transform: translate(3rem, 2rem) rotate(0deg);
+  }
+  40% {
+    transform: translate(1rem, -1rem) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1rem, 2rem) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3rem, 1rem) rotate(0deg);
+  }
+  70% {
+    transform: translate(3rem, 1rem) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1rem, -1rem) rotate(1deg);
+  }
+  90% {
+    transform: translate(1rem, 2rem) rotate(0deg);
+  }
+  100% {
+    transform: translate(1rem, -2rem) rotate(0deg);
+  }
+}
+/* Fading animation */
+.fade1 {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Falling animation */
+.fall {
+  animation: fall 2s infinite;
+  animation-iteration-count: 1;
+}
+
+@keyframes fall {
+  from {
+    top: 5%;
+  }
+  to {
+    top: 60%;
+  }
+}
+.pointer {
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

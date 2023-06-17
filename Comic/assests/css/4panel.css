@@ -1,0 +1,84 @@
+html,
+body {
+  overflow-x: hidden;
+  font-size: calc(1 / 1920 * 100vw);
+}
+.pn4_div {
+  position: relative;
+  background: url("../images/panel4/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1920rem;
+  height: 965rem;
+}
+
+.pn4_sprite {
+  position: absolute;
+  left: 550rem;
+  top: 650rem;
+  width: 300rem;
+  height: 300rem;
+  background-size: 100% 100%;
+  background: url("../images/panel4/stand.png");
+  background-repeat: no-repeat;
+}
+
+.pn4-fire1 {
+  position: absolute;
+  background: url("../images/panel4/fire_1.png");
+  background-repeat: no-repeat;
+  display: none;
+  rotate: 20deg;
+  left: 750rem;
+  top: 580rem;
+  width: 60rem;
+  height: 70rem;
+}
+
+.pn4-fire2 {
+  position: absolute;
+  background: url("../images/panel4/fire_2.png");
+  background-repeat: no-repeat;
+  display: none;
+  rotate: 17deg;
+  left: 1650rem;
+  top: 200rem;
+  width: 60rem;
+  height: 70rem;
+}
+
+.pn4_box1 {
+  position: absolute;
+  padding: 5rem;
+  left: 870rem;
+  top: 470rem;
+  color: brown;
+  background-color: white;
+  border-radius: 15rem;
+  font-size: 25rem;
+}
+
+.pn4_box2 {
+  position: absolute;
+  display: none;
+  padding: 5rem;
+  left: 700rem;
+  top: 650rem;
+  color: brown;
+  background-color: white;
+  border-radius: 15rem;
+  font-size: 25rem;
+}
+
+.pn4_box3 {
+  position: absolute;
+  display: none;
+  left: 31%;
+  top: 74%;
+  color: #9a19eb;
+  text-shadow: 2rem 2rem black, -2rem -2rem black;
+  border-radius: 15rem;
+  font-size: 30rem;
+  z-index: 30;
+  font-weight: 700;
+}
