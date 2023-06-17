@@ -1,0 +1,71 @@
+<html>
+  <!-- root of DOM -->
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <?xml version="1.0" encoding="UTF-8"?>
+    <title>Sonic Serenity: A Journey Through the Amazon Rainforest</title>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <script src="./assests/js/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <section class="homepage">
+      <video autoplay loop muted plays-inline class="background-clip">
+        <source src="./assests/image/rainforest.mp4" type="video/mp4" />
+      </video>
+      <div class="header">
+        <h1>Sonic Serenity: A Journey Through the Amazon Rainforest</h1>
+        <a class="start" href="#InterviewPage" onclick="start_int()"> Start Listening </a>
+      </div>
+    </section>
+
+    <section id="InterviewPage">
+      <div class="narrator-back"></div>
+      <img class="narrator" src="./assests/image/narrator.jpg" alt="Narrtor" />
+      <div class="doctor-back"></div>
+      <img class="doctor" src="./assests/image/Dr.Cooper.jpg" alt="Do.Cooper" />
+    </section>
+
+    <section class="Quiz" id="quiz">
+      <div class="MCQ">
+        <h1>Multiple Choice!</h1>
+        <div class="Q">
+          <h2 id="question">What purpose do the melodious bird calls serve in the Amazon Rainforest?</h2>
+          <div id="answer-buttons">
+            <button id="btnA" class="btn">A. Establishing hunting territories</button>
+            <button id="btnB" class="btn">B. Communicating with other bird species</button>
+            <button id="btnC" class="btn">C. Attracting mates and establishing boundaries</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class = "credit">
+        <h2> Credits</h2>
+        <div id="scroll-container">
+            <div id="scroll-text">
+              Narrator: Hend Alabdouli<br>
+              Dr. Cooper: Yaakulya Sabbani<br>
+              Sound Engineer: Aisha Alketbi <br>
+              Sound Editor: Yonathan Wagaye
+            <div>
+          </div>
+    </section> -->
+
+    <section class="credit1">
+      <!-- <div class="credits">
+          <h3>Narrator: Hend Alabdouli<br>
+          Dr. Cooper: Yaakulya Sabbani<br>
+          Sound Engineer: Aisha Alketbi <br>
+          Sound Editor: Yonathan Wagaye </h3>
+      </div> -->
+      <div class="option">
+        <li><span>Narrator: Hend Alabdouli </span></li>
+        <li><span>Dr. Cooper: Yaakulya Sabbani</span></li>
+        <li><span>Sound Engineer: Aisha Alketbi </span></li>
+        <li><span>Sound Editor: Yonathan Wagaye</span></li>
+      </div>
+    </section>
+    <script src="./assests/js/script.js"></script>
+  </body>
+</html>
