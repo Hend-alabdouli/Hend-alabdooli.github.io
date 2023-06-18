@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* Set height of the html page to 100% of the browser height */
+  height: 100%;
+  /* Hide horizontal scroll */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* parallax */
+.homepage video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+
+.header {
+  width: 80%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 80px;
+  margin-bottom: 15%;
+  font-family: Barqish;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
+
+/* *********************************************************
+  Button
+********************************************************* */
+
+.header a {
+  font-size: 23px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: 0.3;
+  background-color: rgba(128, 128, 128, 0.694);
+  color: white(214, 157, 157);
+  font-weight: 800;
+}
+
+.header a:hover {
+  background-color: gray;
+}
+
+.background-clip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-clip {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .background-clip {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* PODCAST */
+#InterviewPage {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(232, 232, 232);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.doctor {
+  width: 51%;
+  height: 100vh;
+  position: absolute;
+  left: 49%;
+  top: 0%;
+  z-index: 2;
+}
+
+.narrator {
+  width: 51%;
+  height: 100vh;
+  position: absolute;
+  z-index: 3;
+}
+.doctor-back {
+  width: 49%;
+  height: 100vh;
+  position: absolute;
+  left: 51%;
+  top: 0%;
+  background-color: black;
+  z-index: 4;
+  opacity: 0;
+}
+
+.narrator-back {
+  width: 49%;
+  height: 100vh;
+  position: absolute;
+  background-color: black;
+  z-index: 4;
+  opacity: 0;
+}
+
+/* MULTIPLE CHOICE QUESTIONS */
+
+.Quiz {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgba(159, 108, 108, 0.4); */
+  background-image: linear-gradient(rgba(78, 71, 71, 0.4), rgba(78, 71, 71, 0.4)), url("../image/amazon.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MCQ {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  top: 50%;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.MCQ h1 {
+  font-size: 25px;
+  color: #004d0e;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Q {
+  padding: 20px 0;
+}
+
+.Q h2 {
+  font-size: 18px;
+  color: #004d0e;
+  font-weight: 600;
+}
+
+.btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #222;
+  color: #fff;
+}
+.answer-selected .btn {
+  pointer-events: none;
+}
+
+.correct {
+  background-color: rgb(52, 159, 52, 0.7);
+}
+
+.incorrect {
+  background-color: rgb(227, 54, 54, 0.7);
+}
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  position: absolute;
+  top: 92%;
+  width: 100%;
+  z-index: 30;
+}
+.toquestion {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  background-color: #580adf7f;
+  color: white;
+  padding: 10px 30px;
+  letter-spacing: 3px;
+  font-size: 23px;
+  border-radius: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  z-index: 5;
+}
+.toquestion:hover {
+  background-color: #580adf;
+}
+/* CREDITS */
+
+.credit1 {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(78, 71, 71, 0.4), rgba(78, 71, 71, 0.4)), url("../image/rainforest.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit1 .option {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.option li {
+  list-style: none;
+  color: #face30;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0px;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.option li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+
+.option li span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(78, 71, 71, 0.4), rgba(78, 71, 71, 0.4)), url("../image/rainforest.png");
+  border-left: 2px solid #face30;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.appear {
+  animation: show 3s infinite;
+  animation-iteration-count: 1;
+}
+@keyframes show {
+  from {
+    opacity: 0.6;
+    top: 60%;
+  }
+  to {
+    opacity: 1;
+    top: 0%;
+  }
+}
+
+.fade1-in {
+  animation: fadein 3s infinite;
+  animation-iteration-count: 1;
+}
+@keyframes fadein {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade1-out {
+  animation: fadeout 1s infinite;
+  animation-iteration-count: 1;
+}
+@keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,67 @@
+<html>
+  <!-- root of DOM -->
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <?xml version="1.0" encoding="UTF-8"?>
+    <title>Video</title>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+
+    <script src="./assests/js/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <section class="homepage">
+      <video autoplay loop muted plays-inline class="background-clip">
+        <source src="./assests/video/introvid.mp4" type="video/mp4" />
+      </video>
+      <div class="header">
+        <h1>Rhythm Perspectives: A Student Guide to Drumming</h1>
+        <a href="#videoPage" onclick="start_vid()"> Watch Video </a>
+      </div>
+    </section>
+
+    <section id="videoPage">
+      <div id="videoPage-cover"></div>
+    </section>
+
+    <section class="Quiz" id="quiz">
+      <div class="MCQ">
+        <h1>Choose a Question:</h1>
+        <div class="Q">
+          <div id="answer-buttons">
+            <button id="btnA" class="btn" onclick="checkAnswer(this)">
+              <p>Question 1:</p>
+              <p>How long have you been playing the drums?</p>
+            </button>
+            <button id="btnB" class="btn" onclick="checkAnswer(this)">
+              <p>Question 2:</p>
+              <p>What's your favorite drumming technique or style to play?</p>
+            </button>
+            <button id="btnC" class="btn" onclick="checkAnswer(this)">
+              <p>Question 3:</p>
+              <p>Do you have any pre-show rituals to get in the zone before performing?</p>
+            </button>
+          </div>
+          <a class="toVideo" href="#videoPage" onclick="video_play()">Go to Video</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="answer-page">
+      <div id="videoPage-cover1"></div>
+    </section>
+
+    <section class="credit1">
+      <div class="option">
+        <li><span>Drummer: Yonathan Wagaye</span></li>
+        <li><span>Video Editer: Yaakulya Sabbani</span></li>
+        <li><span>Website Developer1: Ghalia Almatroushi</span></li>
+        <li><span>Website Developer2: Hend Alabdouli</span></li>
+      </div>
+    </section>
+    <script src="./assests/js/script.js"></script>
+  </body>
+</html>

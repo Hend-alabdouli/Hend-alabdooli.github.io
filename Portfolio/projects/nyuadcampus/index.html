@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/04dee45b2a.js" crossorigin="anonymous"></script>
+    <title>NYUAD Campus Life</title>
+</head>
+<body>   
+  <!-- Navigation -->
+   <nav class="main">
+        <div class="main-menu">      
+            <ul class="main-items">
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a  href="./dining.html">Dining</a></a></li>
+                <li><a  href="./health.html">Activities & Wellbeing</a></li>
+            </ul>
+        </div>    
+   </nav>
+   <!-- End Navigation -->
+   <main>
+   <!-- Header Image and Text -->
+    <section class="header">
+        <h1>NYUAD Campus Life</h1> 
+    </section>
+    <!-- End Header Image and Text -->
+    &nbsp;&nbsp;
+    <!-- Left Slider - Dining -->
+    <section class="content-divider">
+        <section class="slider content-heading ">
+            <p><button class="purple-button" onclick="window.location.href = './dining.html';">Dining</button></p>&nbsp;
+            <div id="wrapper1">
+                <div id="carousel1">
+                  <div id="content1">                            
+                    <img class="item" src="./img/d1.jpeg"/>
+                    <img class="item" src="./img/d2.jpeg"/>
+                  </div>
+                </div>
+                <!-- Previous button on Slider -->
+                <button id="prev1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                  </svg>
+                </button>
+                <!-- Next Button on Slider -->
+                <button id="next1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                  </svg>
+                </button>
+              </div>
+        </section>
+        <!-- End Dining Slider -->
+        <!-- Right Slider - Activities and Wellbeing -->
+        <section class="slider content-heading">
+            <p><button class="purple-button" onclick="window.location.href = './health.html';">Activities and Wellbeing</button></p>&nbsp;
+            <div id="wrapper2">
+                <div id="carousel2">
+                  <div id="content2">                            
+                    <img class="item" src="./img/aw1.jpeg"/>
+                    <img class="item" src="./img/aw2.jpeg"/>
+                  </div>
+                </div>
+                <button id="prev2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                  </svg>
+                </button>
+                <button id="next2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                  </svg>
+                </button>
+              </div>
+        </section>
+        <!-- End Slider - Activities and Wellbeing -->
+    </section>
+    <!--Video  -->
+    <section class="video">
+        <video  controls>
+            <source src="./video/movie.mov" type="video/mp4">
+          </video>
+    </section>
+    <!-- End Video -->
+
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    font-family: poppins, sans-serif;
+    background-color: #FFF;
+    
+}
+/* Navigation */
+main{
+    padding-top: 65px;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+a:hover{
+    background-color: rgba(118, 77, 184, 0.411);
+}
+.active{
+    background-color: rgba(89, 42, 143, 0.411);;
+}
+
+.main-menu{
+    /* background-color: rgb(10, 13, 36); */
+    background-color: rgba(50, 2, 78, 0.884);
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.main-menu ul{
+    /* border: 1px solid rgba(117, 4, 4, 0.884); */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.main-menu li{
+    flex: 3;
+}
+.main-menu .user{
+    flex: 1;
+}
+/* Header */
+.header{
+    background-color: #333;
+    margin-top: 10px;
+    /* top: 300px; */
+    color: #FFFF;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+    /* border: 1px solid rgb(194, 31, 31); */
+}
+h1{
+    position: relative;
+    font-size: 50px;
+    color: #150738;
+    text-align: left;
+    padding-left: 50px;
+}
+/* end header */
+/* Place to eat */
+.paragraph{
+  
+  background-color: #FFF;
+  margin-top: 20px;
+  padding-left: 200px;
+  padding-right:100px;
+  /* height: 100px; */
+  text-align: justify;
+  line-height: 2;
+  /* border: 1px solid red; */
+}
+/* end places to eat */
+/* Gallary Setting */
+
+.main-gallery{
+    padding-left: 200px;
+  padding-right:100px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+div.gallery {
+    /* border: 1px solid #ccc; */
+  }
+  
+  div.gallery:hover {
+    /* border: 1px solid #777; */
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding-top: 15px;
+    padding-right: 10px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+.responsible-dining{
+ 
+  background-color: #FFF;
+  margin-top: 20px;
+  padding-left: 200px;
+  padding-right:100px;
+  
+  text-align: justify;
+  line-height: 2;
+  /* border: 1px solid red; */
+}
+/* Media Queries */
+@media all and (max-width: 1200px) {
+   .main-menu ul{
+    flex-wrap: wrap;
+   }
+   .main-menu li{
+    flex: 1 1  50%;
+   }
+   .main-menu .user{
+    flex: 1 1 50%;
+   }
+   main{
+    margin-top: 0px;
+    padding-top: 200px;
+   }
+    
+}
+
+@media all and (max-width: 480px) {
+    .navigation li {
+       flex-basis: 100%;
+    }
+ 
+    .navigation .user {
+       flex-basis: 50%;
+    }
+   
+ }
+ .header{
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: #FFF;
+    font-family: poppins, sans-serif;
+    color: #150738;
+ }
+ .content{
+    /* border: 1px solid; */
+    margin-left: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    /* background-color: aliceblue; */
+ }
+ 
